@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a message</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="form_container">
+    <h1 class="title">Please send a message!</h1>
+   <form class="form" action="/leave-note" method="post">
+       <label for="name">Name</label>
+       <input type="text" name="name">
+       <label for="text">Leave a message</label>
+       <textarea name="text" rows="10" id="text"></textarea>
+       <input type="submit" class="submit" />
+   </form>
+   <a href="/" class="home"> Home</a>
+</div>
+</body>
+</html>

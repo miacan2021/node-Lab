@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="read_container">
+        <h1 class="title">You can read messages from other guests!</h1>
+     <div class="card_container">
+    <% for(let i=0; i < messages.length; i++) { %>
+        <div class="card">
+           Name: <%= messages[i].name %><br />
+           Message: <%= messages[i].text %><br />
+           Date: <%= messages[i].published %><br />
+        </div>
+        <% } %>
+    </div>
+        <div class="btn">
+            <a href="/" class="back">Home</a>
+        </div>
+    </div>
+</body>
+</html>
